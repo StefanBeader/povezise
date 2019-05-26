@@ -34,6 +34,6 @@ class SendOrderMail implements ShouldQueue
      */
     public function handle()
     {
-        Mail::to('test@test.com')->send(new OrderMail($this->mailData));
+        Mail::to(env('MAIL_ADMIN'))->send(new OrderMail($this->mailData));
     }
 }

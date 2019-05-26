@@ -35,6 +35,6 @@ class SendContactMail implements ShouldQueue
      */
     public function handle()
     {
-        Mail::to('test@test.com')->send(new ContactMail($this->message));
+        Mail::to(env('MAIL_ADMIN'))->send(new ContactMail($this->message));
     }
 }
