@@ -14,7 +14,7 @@
 </g>
 </svg>
         </a>
-        <a class="icon" href="#" target="_blank">
+        <a class="icon" href="https://www.instagram.com/povezi.se/" target="_blank">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
@@ -50,7 +50,7 @@
         </a>
     </div>
     <div>
-        <p>E-mail: info@povezise.net</p>
-        <p>Telefon: +381 64 789 45 45</p>
+        <p>E-mail: povezi.se@yahoo.com</p>
+        <p>Telefon: +381 69 221 60 22</p>
     </div>
 </div>

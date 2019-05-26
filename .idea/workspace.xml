@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f50561-3dff-48ef-92d6-249e0d7f6c13" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/SendContactMail.php" afterPath="$PROJECT_DIR$/app/Jobs/SendContactMail.php" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/SendOrderMail.php" afterPath="$PROJECT_DIR$/app/Jobs/SendOrderMail.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/frontend/contact_info.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/frontend/contact_info.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,12 +81,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env.example" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env.example" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env.example">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1504">
               <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact_info.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/frontend/contact_info.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+              <folding>
+                <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#svg#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#svg#0;n#a#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,7 +162,6 @@
         <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/js/components/scroller.js" />
         <option value="$PROJECT_DIR$/resources/views/partials/frontend/packages.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/frontend/contact_info.blade.php" />
         <option value="$PROJECT_DIR$/resources/sass/frontend/contact_form.scss" />
         <option value="$PROJECT_DIR$/resources/js/app.js" />
         <option value="$PROJECT_DIR$/resources/views/partials/frontend/navigation.blade.php" />
@@ -174,6 +185,7 @@
         <option value="$PROJECT_DIR$/app/Jobs/SendContactMail.php" />
         <option value="$PROJECT_DIR$/app/Jobs/SendOrderMail.php" />
         <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/resources/views/partials/frontend/contact_info.blade.php" />
       </list>
     </option>
   </component>
@@ -303,13 +315,28 @@
             <path>
               <item name="povezise" type="b2602c69:ProjectViewProjectNode" />
               <item name="povezise" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="povezise" type="b2602c69:ProjectViewProjectNode" />
               <item name="povezise" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Jobs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="povezise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="povezise" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="povezise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="povezise" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partials" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -363,12 +390,12 @@
       <workItem from="1558122151270" duration="599000" />
       <workItem from="1558632948239" duration="9888000" />
       <workItem from="1558780693416" duration="33947000" />
-      <workItem from="1558854722095" duration="14802000" />
+      <workItem from="1558854722095" duration="15716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65710000" />
+    <option name="totallyTimeSpent" value="66624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="3862" height="2122" extended-state="6" />
@@ -557,13 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1288">
           <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/frontend/contact_info.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -868,6 +888,18 @@
         <state relative-caret-position="1504">
           <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/frontend/contact_info.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding>
+            <element signature="n#svg#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#a#1;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#a#2;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
