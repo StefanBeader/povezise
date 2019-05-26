@@ -1,32 +1,32 @@
-let scrollinProgress = false;
+let scrollInProgress = false;
 let sections = [];
-let sectionNumbers = [];
 let activeSection = 0;
-let currentY = 0;
 
-document.addEventListener('wheel', handleScroll);
+const links = [...document.getElementsByClassName('link-tag')];
 
-document.addEventListener("touchstart", function (e) {
-  currentY = e.touches[0].clientY;
+links.forEach(function (link) {
+  link.addEventListener('click', scrollToSection, false);
 });
 
-document.addEventListener("touchend", function (e) {
-  if (currentY > (e.changedTouches[0].clientY + 50)) {
-    moveDown();
-  } else if (currentY < (e.changedTouches[0].clientY - 50)) {
-    moveUp();
-  }
-});
+document.addEventListener('wheel', handleScroll, false);
+
+let tabletAndLess = window.matchMedia("(max-width: 1050px)");
+let isMobile = tabletAndLess.matches;
+if (isMobile) {
+  document.removeEventListener('wheel', handleScroll)
+}
+
+function scrollToSection(e) {
+  e.preventDefault();
+  sections = document.getElementsByClassName("screen");
+  activeSection = e.target.dataset.id;
+  moveSection(activeSection);
+}
 
 function handleScroll(e) {
-  console.log('test')
-  if (!scrollinProgress) {
-    // sections = document.getElementsByTagName("section");
-    // sectionNumbers = document.getElementsByTagName("li");
-    scrollinProgress = true;
+  if (!scrollInProgress) {
+    scrollInProgress = true;
     sections = document.getElementsByClassName("screen");
-    sectionNumbers = document.getElementsByTagName("li");
-
 
     if (e.deltaY > 0) {
       moveDown();
@@ -34,7 +34,7 @@ function handleScroll(e) {
       moveUp();
     }
     setTimeout(() => {
-      scrollinProgress = false
+      scrollInProgress = false
     }, 1000);
   }
 }
@@ -57,11 +57,3 @@ function moveSection(sectionsIndex) {
   let position = sections[sectionsIndex].offsetTop;
   document.getElementById("sections-holder").style["transform"] = "translate3d(0, -" + position + "px, 0)";
 }
-
-
-//   for (var i = 0; i < sectionNumbers.length; i++) {
-//   sectionNumbers[i].addEventListener('click', function() {
-//     activeSection = this.dataset.section;
-//     moveSection(activeSection);
-//   });
-// }

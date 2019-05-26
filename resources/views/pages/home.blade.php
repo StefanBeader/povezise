@@ -19,11 +19,14 @@
                         <p>Svaka radnja koju preduzmemo je unapred isplanirana i dogovorena sa Vama!</p>
                         <p>Usluga o kakvoj ste sanjali je tu!</p>
                         <p>Uštedite vreme, ubrzajte rast na Instagramu, proširite svoj brend!</p>
-                        <button class="btn">Probaj Besplatno</button>
+                        <button class="btn order-btn" data-name="Promo" data-id="{{ $promoPackageId }}">Probaj Besplatno</button>
                     </div>
                 </div>
             </section>
             @include('partials/frontend/packages')
+            <section class="screen">
+                @include('partials/frontend/contact_form')
+            </section>
         </div>
         @include('partials/frontend/try_free_modal')
     </div>

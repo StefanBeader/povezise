@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'PageController@home');
+Route::post('/contactMessage', 'ContactMessageController@store');
+Route::post('/sendOrder', 'OrderController@store');

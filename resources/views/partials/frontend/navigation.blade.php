@@ -84,19 +84,65 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="">O nama</a>
+                        <a class="link-tag" data-id="0" href="#onama">O nama</a>
                     </li>
                     <li>
-                        <a href="">Usluga</a>
+                        <a class="link-tag" data-id="1" href="#usluga">Usluga</a>
                     </li>
                     <li>
-                        <a href="">Paketi</a>
+                        <a class="link-tag" data-id="2" href="#paketi">Paketi</a>
                     </li>
                     <li>
-                        <a href="">Kontakt</a>
+                        <a class="link-tag" data-id="3" href="#kontakt">Kontakt</a>
                     </li>
                 </ul>
+                <div id="menu">
+                    <svg class="open" version="1.1" id="open-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve">
+<g>
+    <path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M28,54C13.663,54,2,42.336,2,28
+		S13.663,2,28,2s26,11.664,26,26S42.337,54,28,54z"/>
+    <path d="M40,16H16c-0.553,0-1,0.448-1,1s0.447,1,1,1h24c0.553,0,1-0.448,1-1S40.553,16,40,16z"/>
+    <path d="M40,27H16c-0.553,0-1,0.448-1,1s0.447,1,1,1h24c0.553,0,1-0.448,1-1S40.553,27,40,27z"/>
+    <path d="M40,38H16c-0.553,0-1,0.448-1,1s0.447,1,1,1h24c0.553,0,1-0.448,1-1S40.553,38,40,38z"/>
+</g>
+</svg>
+                    <svg version="1.1" id="close-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">
+<g>
+    <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26
+		S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z"/>
+    <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0
+		s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36
+		s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293
+		c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z"/>
+</g>
+</svg>
+                </div>
             </nav>
         </div>
     </div>
 </header>
+
+<div id="mobile-menu">
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a class="link-tag-mobile" data-id="0" href="#onama">O nama</a>
+                </li>
+                <li>
+                    <a class="link-tag-mobile" data-id="1" href="#usluga">Usluga</a>
+                </li>
+                <li>
+                    <a class="link-tag-mobile" data-id="2" href="#paketi">Paketi</a>
+                </li>
+                <li>
+                    <a class="link-tag-mobile" data-id="3" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        @include('partials.frontend.contact_info')
+    </div>
+</div>

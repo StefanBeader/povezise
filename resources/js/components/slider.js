@@ -1,10 +1,11 @@
 let slides = [];
 let activeSlide = 0;
+let scrollTimer = 6000;
 
 slides = document.getElementsByClassName('slide');
 showSlide(slides[activeSlide]);
 
-setInterval(nextSlide, 2000)
+setInterval(nextSlide, scrollTimer);
 
 function nextSlide() {
   handleSlideChange('next')

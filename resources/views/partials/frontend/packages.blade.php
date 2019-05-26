@@ -3,61 +3,30 @@
         <div>
             <h2>Naši Paketi</h2>
             <div class="packages">
+                @foreach($packages as $package)
                 <div class="package">
                     <div>
-                        <h3>Promo</h3>
-                        <p>2 dana</p>
-                        <p class="price">0 &euro;</p>
-                    </div>
-                    <div>
-                        <button class="btn">Probaj Besplatno</button>
-                    </div>
-                </div>
-                <div class="package">
-                    <div>
-                        <h3>Start</h3>
-                        <p>30 dana</p>
-                        <p class="price">50 &euro;</p>
+                        <h3>{{ ucwords($package->name) }}</h3>
+                        <p>{{ $package->duration }} dana</p>
+                        <p class="price">{{ $package->price }} &euro;</p>
+                        {{--TODO refactor this when packages_attribues are implemented--}}
+                        @if($package->id !== $promoPackageId)
                         <ul>
-                            <li>1000-2000 pratilaca</li>
+                            <li>{{ $package->follower_range }} pratilaca</li>
                             <li>smernice/saveti</li>
                             <li>podrška 24h</li>
                         </ul>
+                        @endif
                     </div>
                     <div>
-                        <button>poruči</button>
+                        <button class="order-btn"
+                                data-name="{{ ucwords($package->name) }}"
+                                data-id="{{ $package->id }}">
+                            {{ $package->id === $promoPackageId ? 'probaj besplatno' : 'poruči'}}
+                        </button>
                     </div>
                 </div>
-                <div class="package">
-                    <div>
-                        <h3>Pro</h3>
-                        <p>90 dana</p>
-                        <p class="price">120 &euro;</p>
-                        <ul>
-                            <li>3000-7000 pratilaca</li>
-                            <li>smernice/saveti</li>
-                            <li>podrška 24h</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button>poruči</button>
-                    </div>
-                </div>
-                <div class="package">
-                    <div>
-                        <h3>Premium</h3>
-                        <p>180 dana</p>
-                        <p class="price">200 &euro;</p>
-                        <ul>
-                            <li>6000-10000 pratilaca</li>
-                            <li>smernice/saveti</li>
-                            <li>podrška 24h</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button>poruči</button>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
