@@ -2,7 +2,7 @@
     <div class="contact-flex">
         @include('partials.frontend.contact_info')
         <div class="form">
-            <h2>Pošaljite nam poruku</h2>
+            <h2>Imate pitanje? Pošaljite nam poruku</h2>
             <form id="contact-form">
                 @csrf
                 <div class="form-control">

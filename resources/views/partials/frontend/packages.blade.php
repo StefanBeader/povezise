@@ -22,7 +22,7 @@
                         <button class="order-btn"
                                 data-name="{{ ucwords($package->name) }}"
                                 data-id="{{ $package->id }}">
-                            {{ $package->id === $promoPackageId ? 'probaj besplatno' : 'poruči'}}
+                            {{ $package->id === $promoPackageId ? 'probaj besplatno' : 'prijavi se'}}
                         </button>
                     </div>
                 </div>
