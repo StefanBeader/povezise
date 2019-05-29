@@ -1512,11 +1512,11 @@ function handleSlideChange(direction) {
 }
 
 function showSlide(el) {
-  el.style.display = 'block';
+  el.classList.add('show');
 }
 
 function hideSlide(el) {
-  el.style.display = 'none';
+  el.classList.remove('show');
 }
 
 /***/ }),
@@ -1539,8 +1539,8 @@ function hideSlide(el) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Projects\povezise\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Projects\povezise\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/vagrant/code/povezise/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/vagrant/code/povezise/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

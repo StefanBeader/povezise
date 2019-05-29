@@ -32,6 +32,7 @@ class OrderMail extends Mailable
      */
     public function build()
     {
-        return $this->view('mails.order_mail');
+        return $this->from('orders@povezise.net')
+            ->view('mails.order_mail');
     }
 }

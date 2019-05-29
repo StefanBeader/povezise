@@ -36,9 +36,9 @@ function handleSlideChange(direction) {
 }
 
 function showSlide(el) {
-  el.style.display = 'block';
+    el.classList.add('show');
 }
 
 function hideSlide(el) {
-  el.style.display = 'none';
+    el.classList.remove('show');
 }
