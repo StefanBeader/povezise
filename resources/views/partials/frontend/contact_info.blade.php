@@ -1,7 +1,7 @@
 <div class="info">
     <h2>Kontakt</h2>
     <div class="social-icons">
-        <a class="icon" href="#" target="_blank">
+        <a class="icon" rel=nofollow href="https://www.facebook.com/unapredisvojbiznis" target="_blank">
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 96.124 96.123" style="enable-background:new 0 0 96.124 96.123;"
@@ -14,7 +14,7 @@
 </g>
 </svg>
         </a>
-        <a class="icon" href="https://www.instagram.com/povezi.se/" target="_blank">
+        <a class="icon" rel=nofollow href="https://www.instagram.com/povezi.se/" target="_blank">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
@@ -33,7 +33,7 @@
 </g>
 </svg>
         </a>
-        <a class="icon" href="#" target="_blank">
+        <a class="icon" rel=nofollow href="#" target="_blank">
             <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                  viewBox="0 0 430.117 430.117" style="enable-background:new 0 0 430.117 430.117;"

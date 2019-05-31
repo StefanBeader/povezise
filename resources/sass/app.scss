@@ -1,6 +1,7 @@
 @import "normalize";
 @import "variables";
 @import "typography";
+@import "form";
 
 * {
   box-sizing: border-box;
@@ -186,29 +187,6 @@ header {
   }
 }
 
-.form-control {
-
-  margin-bottom: 1em;
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  input,
-  select,
-  textarea {
-    display: block;
-    width: 100%;
-    padding: 10px 16px;
-    background-color: white;
-    border: 1px solid lightgray;
-    border-radius: 16px;
-    outline: none;
-  }
-  textarea {
-    height: 10em;
-  }
-}
 
 .btn {
   border: none;
@@ -394,6 +372,42 @@ input, textarea, select {
   }
 }
 
+@media screen and (max-width: 90.625em) and (min-width: 66em){
+  .container {
+    width: 90vw;
+  }
+  .packages {
+    font-size: 0.8em;
+    .package {
+      padding: 30px;
+    }
+  }
+
+  .packages-container {
+    h2 {
+      margin-bottom: 1rem;
+      margin-top: 2em;
+      font-size: 2.5em;
+    }
+  }
+
+  .contact-flex {
+    .form {
+      h2 {
+        margin-bottom: .5em;
+        margin-top: 2em;
+      }
+      .form-control {
+        margin-bottom: .5em;
+      }
+    }
+  }
+  #ContactMessageResponse {
+    margin-bottom: 0;
+    padding: .625em 1em;
+  }
+}
+
 @media screen and (max-width: 65.625em) {
 
   header {
@@ -499,9 +513,7 @@ input, textarea, select {
     }
 }
 
-@media screen and (max-width: 550px) {
-
-
+@media screen and (max-width: 34.375em) {
 
   .container {
     width: 90vw;
@@ -509,6 +521,7 @@ input, textarea, select {
 
   #slider {
     height: 375px;
+    overflow: hidden;
     .slide {
       height: 375px;
     }
